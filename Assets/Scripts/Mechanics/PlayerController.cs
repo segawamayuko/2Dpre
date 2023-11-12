@@ -51,11 +51,11 @@ namespace Platformer.Mechanics
         private bool stopJump;
 
 
-       /// <summary>
-       /// 2D用の当たり判定
-       /// </summary>
-       public Collider2D collider2d;
-      
+        /// <summary>
+        /// 2D用の当たり判定
+        /// </summary>
+        public Collider2D collider2d;
+
         /// <summary>
         /// 音源を鳴らす装置
         /// </summary>
@@ -127,6 +127,10 @@ namespace Platformer.Mechanics
                 {
                     //stopJump = true;
                     //Schedule<PlayerStopJump>().player = this;
+                }
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    Debug.Log("Zキーが押されました");
                 }
             }
             //そうじゃなかったら
